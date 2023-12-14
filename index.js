@@ -6,7 +6,7 @@ const multer = require('multer');
 
 app.use(cors());
 app.use(express.static('public'));
-app.use('/public', express.static(process.cwd() + '/public'));
+// app.use('/public', express.static(process.cwd() + '/public'));
 
 const storage = multer.memoryStorage(); // Use memory storage to handle files in memory
 const upload = multer({ storage: storage });
